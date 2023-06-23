@@ -28,5 +28,6 @@ public class TimeoutThread {
         t2.start();
         ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
         scheduler.schedule(t2::interrupt, 5, TimeUnit.SECONDS);
+        scheduler.shutdown();
     }
 }

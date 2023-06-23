@@ -2,7 +2,7 @@ import java.util.concurrent.RecursiveTask;
 
 public class ForkJoinPool {
     public static void main(String[] args) {
-        Fibonacci f = new Fibonacci(40);
+        Fibonacci f = new Fibonacci(10);
         System.out.println(f.compute());
     }
 }
