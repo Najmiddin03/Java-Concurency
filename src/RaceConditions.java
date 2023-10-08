@@ -33,3 +33,30 @@ public class RaceConditions {
         };
     }
 }
+
+class Counter {
+    private long count = 0;
+
+    public long incAndGet() {
+        this.count++;
+        return this.count;
+    }
+
+    public long get() {
+        return this.count;
+    }
+}
+
+class CounterSynchronized {
+    private long count = 0;
+
+    public synchronized long incAndGet() {
+        this.count++;
+        return this.count;
+    }
+
+    public synchronized long get() {
+        return this.count;
+    }
+}
+
